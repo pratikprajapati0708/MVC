@@ -1,0 +1,25 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div> 
+        @CustomHelper.Image("https://www.alamy.com/google-vector-logo-the-emblem-of-the-good-corporation-image367958209.html", "THIS IS IMAGE")
+    </div>
+    <label>This is second Image</label>
+    <div>
+        @Html.Img("https://www.alamy.com/google-vector-logo-the-emblem-of-the-good-corporation-image367958209.html", "THIS IS IMAGE")
+
+        @Html.ImgTag("https://www.alamy.com/google-vector-logo-the-emblem-of-the-good-corporation-image367958209.html", "THIS IS IMAGE")
+    </div>
+
+</body>
+</html>
