@@ -1,0 +1,45 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div> 
+        @ViewBag.MyCustomProperty
+    </div>
+    <div>
+        <ul>
+            @foreach (var item in ViewBag.MyList)
+            {
+                <li>@item</li>
+            }
+        </ul>
+        <ul>
+            @foreach (var item in ViewBag.MyEmpList)
+            {
+                <li>Name-@item.Name</li>
+            }
+        </ul>
+        <div>
+            @ViewData["My Key"]
+            <div>
+                <ul>
+                    @foreach (var item in (List<string>)ViewData["MyList"])
+                    {
+                        <li>Name-@item</li>
+                    }
+                </ul>
+                @ViewData["MyList"]
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>
