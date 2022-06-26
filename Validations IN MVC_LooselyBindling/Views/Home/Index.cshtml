@@ -1,0 +1,28 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div> 
+        @using(Html.BeginForm("SubmitData","Home",FormMethod.Post))
+            {
+                @Html.ValidationSummary() // Validation Message summary 
+
+                @Html.TextBox("FirstName") <br />   //@Html.TextBoxFor("x=>x.FirstName")      //Strongly Coupled
+                @Html.ValidationMessage("FirstName")//@Html.ValidationMessageFor("x=>x.FirstName")
+                @Html.TextBox("FirstName") <br />
+                @Html.TextBox("FirstName") <br />
+                @Html.TextBox("FirstName") <br />
+                <input type="submit" />
+            }
+    </div>
+</body>
+</html>
