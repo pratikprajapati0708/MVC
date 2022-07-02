@@ -7,14 +7,17 @@ using ConventionalRouting.Models;
 
 namespace ConventionalRouting.Controllers
 {
+    [RoutePrefix("students")]    //-----------------> Common part of the route we can write here and delete rest in route 
     public class StudentController : Controller
     {
         // GET: Student
+        [Route("students")]
         public ActionResult GetAllStudents()
         {
             var students = Students();
             return View(students);
         }
+        [Route("students/{id}")]
         public ActionResult GetStudent(int id)
         {
             var student = Students().FirstOrDefault(x => x.Id == id);
@@ -23,7 +26,7 @@ namespace ConventionalRouting.Controllers
         public ActionResult GetStudentAddress(int id)
 
         {
-            var student = Students().Where(x => x.Id == id).Select(x => x.Address).FirstOrDefault;
+            var studentAddress = Students().Where(x => x.Id == id).Select(x => x.Address).FirstOrDefault();
             return View();
         }
         private List<Student> Students()
