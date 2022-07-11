@@ -1,0 +1,14 @@
+C:\Users\pratik.a.prajapati\source\repos\MVCAppwithDb\MyApp.Db\bin\Debug\MyApp.Db.dll
+C:\Users\pratik.a.prajapati\source\repos\MVCAppwithDb\MyApp.Db\bin\Debug\MyApp.Db.pdb
+C:\Users\pratik.a.prajapati\source\repos\MVCAppwithDb\MyApp.Db\obj\Debug\MyApp.Db.csproj.AssemblyReference.cache
+C:\Users\pratik.a.prajapati\source\repos\MVCAppwithDb\MyApp.Db\obj\Debug\MyApp.Db.csproj.CoreCompileInputs.cache
+C:\Users\pratik.a.prajapati\source\repos\MVCAppwithDb\MyApp.Db\obj\Debug\MyApp.Db.dll
+C:\Users\pratik.a.prajapati\source\repos\MVCAppwithDb\MyApp.Db\obj\Debug\MyApp.Db.pdb
+C:\Users\pratik.a.prajapati\source\repos\MVCAppwithDb\MyApp.Db\bin\Debug\MyApp.Db.dll.config
+C:\Users\pratik.a.prajapati\source\repos\MVCAppwithDb\MyApp.Db\bin\Debug\EntityFramework.dll
+C:\Users\pratik.a.prajapati\source\repos\MVCAppwithDb\MyApp.Db\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\pratik.a.prajapati\source\repos\MVCAppwithDb\MyApp.Db\bin\Debug\MyApp.Models.dll
+C:\Users\pratik.a.prajapati\source\repos\MVCAppwithDb\MyApp.Db\bin\Debug\MyApp.Models.pdb
+C:\Users\pratik.a.prajapati\source\repos\MVCAppwithDb\MyApp.Db\bin\Debug\EntityFramework.xml
+C:\Users\pratik.a.prajapati\source\repos\MVCAppwithDb\MyApp.Db\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\pratik.a.prajapati\source\repos\MVCAppwithDb\MyApp.Db\obj\Debug\MyApp.Db.csproj.CopyComplete

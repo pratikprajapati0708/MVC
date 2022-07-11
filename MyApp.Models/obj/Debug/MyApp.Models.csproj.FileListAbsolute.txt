@@ -1,0 +1,6 @@
+C:\Users\pratik.a.prajapati\source\repos\MVCAppwithDb\MyApp.Models\bin\Debug\MyApp.Models.dll
+C:\Users\pratik.a.prajapati\source\repos\MVCAppwithDb\MyApp.Models\bin\Debug\MyApp.Models.pdb
+C:\Users\pratik.a.prajapati\source\repos\MVCAppwithDb\MyApp.Models\obj\Debug\MyApp.Models.csproj.AssemblyReference.cache
+C:\Users\pratik.a.prajapati\source\repos\MVCAppwithDb\MyApp.Models\obj\Debug\MyApp.Models.csproj.CoreCompileInputs.cache
+C:\Users\pratik.a.prajapati\source\repos\MVCAppwithDb\MyApp.Models\obj\Debug\MyApp.Models.dll
+C:\Users\pratik.a.prajapati\source\repos\MVCAppwithDb\MyApp.Models\obj\Debug\MyApp.Models.pdb
