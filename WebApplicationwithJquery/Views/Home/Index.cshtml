@@ -1,0 +1,49 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+   
+</head>
+<body>
+    <div>
+        <h2>Id</h2> --<h2 id="stdid"></h2>
+    </div>
+    <div>
+        <h2>Name</h2> --<h2 id="stdname"></h2>
+    </div>
+    <div>
+        <h2>Address</h2> --<h2 id="stdadd"></h2>
+    </div>
+
+    <input type="submit" onclick="btnClick()" value="click me"/>
+</body>
+</html>
+
+<script type="text/javascript">
+
+    function btnClick() {
+        $.ajax({
+            url: "/Home/GetAllStudents",
+            method: "GET",
+            success: function (data) {
+                
+                data = JSON.parse(data);
+                console.log(data);
+                $('#stdid').text(data.Id);
+                $('#stdname').text(data.Name);
+            },
+            error: function (err) {
+                
+                console.log(err);
+            }
+        })
+    }
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
