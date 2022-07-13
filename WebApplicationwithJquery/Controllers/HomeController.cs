@@ -28,5 +28,10 @@ namespace WebApplicationwithJquery.Controllers
             var json = JsonConvert.SerializeObject(std);
             return Json(json,JsonRequestBehavior.AllowGet);
         }
+        [HttpPost]
+        public JsonResult AddStudents(Student stud)
+        {
+            return Json("true", JsonRequestBehavior.AllowGet);
+        }
     }
 }

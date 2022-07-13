@@ -9,38 +9,55 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>Index</title>
-   
+
 </head>
 <body>
-    <div>
-        <h2>Id</h2> --<h2 id="stdid"></h2>
-    </div>
-    <div>
-        <h2>Name</h2> --<h2 id="stdname"></h2>
-    </div>
-    <div>
-        <h2>Address</h2> --<h2 id="stdadd"></h2>
-    </div>
+    <form>
+        <div>
+            <input type="text" id="stdid" placeholder="Id" />
+        </div>
+        <div>
+            <input type="text" id="stdname" placeholder="Name" />
+        </div>
+        <div>
+            <input type="text" id="stdaddress" placeholder="Address" />
+        </div>
 
-    <input type="submit" onclick="btnClick()" value="click me"/>
+        <input type="submit" onclick="BtnClick()" value="click me" />
+    </form>
 </body>
 </html>
 
 <script type="text/javascript">
 
-    function btnClick() {
+    function BtnClick() {
+        var id = $("#stdid").val();
+        var name = $("#stdname").val();
+        var add = $("#stdaddress").val();
+
+        var obj = {
+            Id:id,
+            Name:name,
+            Address:add,
+
+        }
+        onsub(obj);
+    }
+
+    function onsub(obj) {
+
         $.ajax({
-            url: "/Home/GetAllStudents",
-            method: "GET",
+            url: "/Home/AddStudents",
+            method: "POST",
+            data: obj,
             success: function (data) {
-                
+
                 data = JSON.parse(data);
                 console.log(data);
-                $('#stdid').text(data.Id);
-                $('#stdname').text(data.Name);
+
             },
             error: function (err) {
-                
+
                 console.log(err);
             }
         })
