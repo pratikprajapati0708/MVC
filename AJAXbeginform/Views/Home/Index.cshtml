@@ -1,0 +1,26 @@
+﻿
+@Model AJAXbeginform
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+@using (Ajax.BeginForm("Index", new AjaxOptions() { OnSuccess = "fnsuccess", OnFailure = "fnfailure" }))
+{
+    <div>
+        @Html.EditorFor(x => x.Name) <br />
+        @Html.EditorFor(x => x.Email) <br />
+        @Html.EditorFor(x => x.Address) <br />
+
+        <input type="submit" value="click me" />
+    </div>
+}
+<script>
+    function fnsuccess(data) {
+        console.log(data);
+    }
+    function fnfailure(err) {
+        console.log(err);
+    }
+</script>
