@@ -1,12 +1,21 @@
-﻿
-@Model AJAXbeginform
+﻿@model AJAXbeginform.Models.Student
 @{
     ViewBag.Title = "Index";
 }
 
-<h2>Index</h2>
+<div style="display:none" id="loader">
+    <img src="~/Content/Bounce-Bar-Preloader-1.gif" height="100" width="100" />
 
-@using (Ajax.BeginForm("Index", new AjaxOptions() { OnSuccess = "fnsuccess", OnFailure = "fnfailure" }))
+</div>
+
+@using (Ajax.BeginForm("Index", new AjaxOptions()
+{
+    OnSuccess = "fnsuccess",
+    OnFailure = "fnfailure",
+    HttpMethod="POST",
+    LoadingElementId="loader",
+    LoadingElementDuration= 2000
+}))
 {
     <div>
         @Html.EditorFor(x => x.Name) <br />
